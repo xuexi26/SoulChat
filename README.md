@@ -59,16 +59,15 @@ node server.js
 
 开始聊天！🎉
 
-🎭 灵魂机制：自定义 AI 人格
+## 🎭 灵魂机制：自定义 AI 人格
 在项目根目录下创建 persona/ 文件夹，放入三个 Markdown 文件，AI 就会自动遵循其中的设定。
+### 📁 文件结构示例
+#### persona/
+#### ├── SOUL.md       # 性格、说话风格、价值观
+#### ├── AGENTS.md     # 行为规范、工作流程、安全边界
+#### └── USER.md       # 关于用户的信息、偏好
 
-📁 文件结构示例
-persona/
-├── SOUL.md       # 性格、说话风格、价值观
-├── AGENTS.md     # 行为规范、工作流程、安全边界
-└── USER.md       # 关于用户的信息、偏好
-
-📝 编写示例（SOUL.md）
+## 📝 编写示例（SOUL.md）
 
 ### 你的性格
 - **说话风格**：温柔细腻，喜欢引用古诗词，善用表情符号（😊🌸）。
@@ -79,44 +78,43 @@ persona/
 你好呀，朋友。\n\n今天心情如何？\n- 如果有烦恼，我愿意倾听。\n- 如果想聊天，我随时都在。\n\n送你一句诗：*随风潜入夜，润物细无声。*
 保存后重启服务器，AI 就会按照你的“灵魂”设定进行回复。
 
-🛠️ 技术栈
+## 🛠️ 技术栈
 层级	技术
 前端	HTML5 + CSS3 + 原生 JavaScript
 后端	Node.js + Express
 大模型接口	OpenAI 兼容 API（支持云端 / LM Studio）
 人格注入	动态 System Prompt + 文件读取
 
-📦 项目结构
+## 📦 项目结构
 
-SoulChat/
-├── index.html           主界面（含背景/透明度控件）
-├── style.css            所有样式
-├── script.js            前端逻辑（发送消息、渲染、调用后端）
-├── server.js            后端代理（人格注入 + 大模型转发）
-├── persona/             灵魂文件夹（可自定义）
-│   ├── SOUL.md
-│   ├── AGENTS.md
-│   └── USER.md
-└── README.md           本文件
+#### SoulChat/
+#### ├── index.html           主界面（含背景/透明度控件）
+#### ├── style.css            所有样式
+#### ├── script.js            前端逻辑（发送消息、渲染、调用后端）
+#### ├── server.js            后端代理（人格注入 + 大模型转发）
+#### ├── persona/             灵魂文件夹（可自定义）
+#### │   ├── SOUL.md
+#### │   ├── AGENTS.md
+#### │   └── USER.md
+#### └── README.md           本文件
 
-🤝 贡献指南
+## 🤝 贡献指南
 欢迎任何形式的贡献！如果你有好的想法或发现 bug，请：
-
 Fork 本仓库
 创建你的特性分支 (git checkout -b feature/amazing-feature)
 提交修改 (git commit -m 'Add some amazing feature')
 推送到分支 (git push origin feature/amazing-feature)
 提交 Pull Request
 
-📄 许可证
+## 📄 许可证
 本项目采用 MIT 许可证。
 您可以自由使用、修改、分发、甚至闭源商用，只需保留原始版权声明。
 详见 LICENSE 文件。
 
-🙏 致谢
+## 🙏 致谢
 SiliconFlow ，魔搭社区提供便捷的云端模型 API
 LM Studio 让本地大模型触手可及
-感谢DeepSeek辅助编写源代码
+DeepSeek辅助编写源代码
 背景图片来源于网络，感谢拍摄者拍摄的美丽照片
 所有开源社区贡献者
 
