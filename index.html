@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>我的 AI 聊天 | 背景+透明度可调</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h2>✨ SoulChat</h2>
+            <!-- 新增背景控制按钮组，高度已减半 -->
+            <div class="bg-controls">
+                <button class="bg-btn" id="changeBgBtn" title="更换背景图片">🖼️ <span>背景</span></button>
+                <button class="bg-btn" id="resetBgBtn" title="恢复默认渐变背景">🌀 <span>重置</span></button>
+            </div>
+        </div>
+
+        <!-- 新增透明度控制条 -->
+        <div class="alpha-control">
+            <div class="alpha-label">
+                <span>🔮</span> <span>窗口透明</span>
+            </div>
+            <div class="slider-container">
+                <input type="range" id="alphaSlider" min="0.2" max="1.0" step="0.01" value="0.92">
+                <span class="alpha-value" id="alphaValue">92%</span>
+            </div>
+            <button class="reset-alpha-btn" id="resetAlphaBtn" title="重置透明度">⟳ <span>重置透明度</span></button>
+        </div>
+
+        <div class="chat-messages" id="messages"></div>
+
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="输入你的问题..." autocomplete="off" />
+            <button id="sendBtn">发送</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
