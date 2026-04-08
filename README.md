@@ -46,7 +46,7 @@ const API_KEY = '你的密钥';
 const API_URL = 'https://api.siliconflow.cn/v1/chat/completions';
 
 选项 B：使用本地 LM Studio（完全离线）
-下载安装 LM Studio，并加载一个模型（如 Llama 3.1 8B）。
+下载安装 LM Studio，并加载一个模型（如 Qwen3.5 2B）。
 
 在 LM Studio 的 Developer 视图中启动本地服务器（默认 http://127.0.0.1:1234），开启 CORS。
 
